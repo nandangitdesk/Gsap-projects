@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color:    #232025;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.main{
+    
+    color: #d1d1d1;
+    background-color:   #232025;
+    position: relative;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3vw;
+    padding:  0 5vw;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+
+}
+.nav h2{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    transition: all ease 1s;
+}
+.nav-elem h3{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    transition: all ease 1s;
+}
+.nav-elem{
+    display: flex;
+    align-items: center;
+    transition: all ease 1s;
+}
+.nav-elem i{
+    font-size: 1.7rem;
+    margin-left: 5vw;
+    cursor: pointer;
+}
+.nav-elem #cancel{
+    font-size: 1.7rem;
+    margin-left: 5vw;
+    cursor: pointer;
+    display: none;
+    background-color:    #232025;
+}
+.full-scr-nav{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: bisque;
+    color:    #232025;
+    top: -100%;
+    padding: 10vw 10vw;
+    transition: all ease 1s;
+    z-index: 9;
+}
+.full-scr-nav h1{
+    color: #222;
+    font-size: 11rem;
+
+}
+.page1{
+    min-height: 85vh;
+    position: relative;
+    width: 100vw;
+}
+.page1 h1{
+    position: absolute;
+    top: 26%;
+    padding: 0 10vw;
+    font-size: 11rem;
+    letter-spacing: 0.6rem;
+
+}
+.page1 h2{
+    position: absolute;
+    top: 56%;
+    left: 20%;
+    font-size: 2rem;
+    width: 26%;
+
+}
+.page1 h4{
+    position: absolute;
+    top: 31%;
+    padding: 10vw;
+    font-size: 1rem;
+
+}
+.page1 h3{
+    position: absolute;
+    top: 51%;
+    left: 70%;
+    font-size: 1rem;
+    width: 22%;
+
+
+}
+.page2 img{
+    position: relative;  
+    left: 50%;
+    transform: translate(-50%,0) scale(0.8);
+    width: 100%;
+    
+}
+.page2{
+    position:relative ;
+    min-height: 100vh;
+    padding-bottom: 20vh;
+}
+.page2 h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    transform-origin: 100% 100%;
+    transform: rotateX(270deg);
+    opacity: 0;
+  
+}
+#h1{
+    margin-top: 10vh;
+}
+.page2 h1 span{
+    
+   font-family: 'Dancing Script', cursive;
+
+}
+.page3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.line{
+    height: 2px;
+    width: 100%;
+    border: 1px solid #d1d1d1;
+
+}
+.page3 .elem{
+    height: 9vw;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+.elem h1{
+    font-size: 5vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 5vw;
+    z-index: 999;
+    mix-blend-mode: difference;
+}
+.elem img{
+    height: 11vw;
+    width: 11vw;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear 0.3s;
+    position: absolute;
+    opacity: 0;
+    
+    
+}
+.page4{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    padding: 2vw 5vw;
+}
+.page4 h1{
+    font-size: 7.7rem;
+    /* transform: rotateX(-90deg); */
+    opacity: 0;
+}
+.page5{
+    height: 130vh;
+    width: 100%;
+    position: relative;
+}
+.page5-elems{
+    height: 22%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+}
+.page5-elem1{
+    width: 70%;
+    height: 100%;
+    padding: 1.5vw 5vw;
+    font-size: 4rem;
+}
+.page5-elem2{
+    width: 30%;
+    height: 100%;
+    padding: 3.5vw 5vw;
+    font-size: 1.5rem;
+    border-left: 1px solid #d1d1d1;
+}
+.page5-content{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 15vw 0;
+    background-image: url(https://assets-global.website-files.com/61defec4a021d8fe954c11bd/61defec4a021d83ede4c11f8_stars.gif);
+}
+.page5-content h1{
+    font-size: 3rem;
+    width: 45%;
+    text-align: center;
+    line-height: 2.8rem;
+}
+.page5-content h1 span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    
+}
+.page5-content h4{
+    width: 20%;
+    font-size: 1rem;
+    text-align: center;
+    margin: 2rem ;
+}
+.page5-content img {
+    margin-top: 1rem;
+    animation: rotation 1.5s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.page6 h1{
+    font-size:10rem ;
+    line-height: 23vh;
+}
+.page6  h1 .one2{
+    color: transparent;
+    -webkit-text-stroke:1px  #d1d1d1;
+}
+.page6 .slide1-of-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+.page6 .slide2-of-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+.page6 .slide2-of-h1 h1{
+    transform: translateX(-100%);
+}
+
+/* to hide scrollbar in chrome we use -webkit-scrollbar{ display:none;*/
+.page6 .slide2-of-h1::-webkit-scrollbar{
+    display: none;
+}
+.page6 .slide1-of-h1::-webkit-scrollbar{
+    display: none;
+}
+
+/* //to hide scrollbar in firefox browser we use scrollbar-width:none; */
+.page6 .slide1-of-h1{
+    scrollbar-width: none;
+}
+.page6 .slide2-of-h1{
+    scrollbar-width: none;
+}
+.page6 h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 34%;
+    width: 30%;
+    margin-bottom:6vw ;
+}
+.page6 h2 span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.8rem;
+}
+.page7{
+    height: 100vh;
+    width: 100%;
+    padding: 10vw 0vw;
+}
+.page7 h2{
+    font-size: 2rem;
+    text-align: center;
+    width: 30%;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    
+}
+.page7 h2 span{
+    font-family: 'Dancing Script', cursive; 
+    font-size:2.8rem;
+}
+.page7-elems{
+    height: 45vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4vw;
+}
+.page7-elems .element1{
+    
+    width: 25%;
+    height: 100%;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.page7-elems .element2{
+    
+    width: 25%;
+    height: 100%;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.page7-elems .element1 img{
+    height:80% ;
+    width:80% ;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in 0.5ms;
+    transform: rotate(10deg);
+}
+.page7-elems .element2 img{
+    height:80% ;
+    width:80% ;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+    transform: rotate(10deg);
+}
+.page7-elems .element1 h1{
+    position: relative;
+    z-index:999 ;
+}
+.page7-elems .element2 h1{
+    position: relative;
+    z-index:999 ;
+}
