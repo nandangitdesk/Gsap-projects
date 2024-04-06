@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+#main{
+    width: 100%;
+    background-color:#F8F7F4;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+ 
+}
+nav{
+    height: 6vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navpart1{
+    width: 30%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.navpart1 a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #0D0C22;
+    font-weight: 600;
+}
+nav .navpart2{
+    width: 30%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navpart2 >img{
+    height: 6vw;
+    width: 8vw;
+}
+.navpart3{
+    padding: 0 2rem 0 0;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.searchinput{
+    padding: 1rem 2rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    border-radius: 100px;
+}
+.searchinput i{
+   
+    color: rgb(95, 95, 95);
+}
+.searchinput input{
+    border: none;
+    font-size: 0.9rem;
+    
+}
+.navpart3 a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #0D0C22;
+    font-weight: 600;
+}
+.navpart3 button{
+    padding: 1rem 1.5rem;
+    background-color:#0D0C22 ;
+    color: white;
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.page1Content{
+    width: 60%;
+    padding: 5rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page1Content h3{
+    background-color: #FFADE2;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    font-weight: 600;
+    font-family: "Source Serif 4", serif;
+    text-align: center;
+}
+.page1Content h1{
+    font-weight: 500;
+    font-family: "Source Serif 4", serif;
+    font-size: 4.5rem;
+    text-align: center;
+    line-height: 4rem;
+    margin-top: 2rem;
+}
+.page1Content h2{
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    margin-top: 2rem;
+}
+.page1Content button{
+    background-color: #0D0C22;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    border-radius: 100px;
+    border: none;
+}
+.page1Cards{
+    width: 100%;
+  
+    padding: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    overflow: hidden;
+
+   
+}
+.card{
+    flex-shrink: 0;
+    height: 20rem;
+    width: 16rem;
+    border-radius: 32px;
+    overflow: hidden;
+    position: relative;
+    left: 180%;
+    scale: 0.7;
+    opacity: 0;
+    rotate: 30deg;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.card video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cardOverlay{
+    height: 100%;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.6167717086834734) 100%);
+    position: absolute;
+    z-index: 9;
+    padding: 1rem 1.5rem;
+    
+}
+.profile{
+    position: absolute;
+    bottom: 20%;
+    
+}
+
+.profile > h4{
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.3rem;
+    
+}
+.cardOverlay .skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    gap: 1rem;
+}
+.skills button{
+    padding: 0.5rem 0.8rem;
+    background-color: red;
+    color: white;
+    font-size: 11px;
+    line-height: 11px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100px;
+    
+}
+
+.page2{
+    min-height: 100vh;
+    width: 100%;
+}
+.page2 h1{
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 4rem;
+}
+.page2Cards{
+    width: 100%;
+    padding: 4rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; 
+  
+}
+
+.page2Card{
+    flex-shrink: 0;
+    height: 17rem;
+    width: 20rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.page2cardOverlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.6195728291316527) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    transition-timing-function: ease-in;
+   
+}
+.page2cardOverlay:hover{
+    opacity: 1;
+}
+.overlayContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    gap: 6rem;
+    margin-top: 11rem;
+    
+}
+.overlayContent h3{
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+}
+.overlayContent i{
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    padding: 0.8rem;
+    font-weight: 600;
+}
+.cardImage{
+    height: 85%;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.cardImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cardDetails{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    color: rgb(88, 87, 87);
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+}
+.creator .creatorimg{
+    height: 1.8rem;
+    width: 1.8rem;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+.creatorimg  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cardViews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+}
+.page2 h4{
+    margin-top: 2rem;
+
+    width: fit-content;
+    padding: 1rem 2.5rem;
+    border-radius: 100px;
+    border: 1px solid black;
+    margin: auto;
+}
+.page3{
+    min-height: 85vh;
+    width: 100%;
+    margin-top: 5rem;
+    background-color: #FFDA79;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page3 .page3Content{
+    width: 40%;
+    height: 100%;
+
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.page3Content h1{
+    font-family: "Source Serif 4", serif;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 500;
+}
+.page3Content h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-top: 3rem;
+}
+.page3btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.page3btns button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 100px;
+}
+.page3btns button:nth-child(2){
+    background-color: white;
+    color: black;
+}
+.designproduct{
+    margin-top: 3rem;
+    width: 100%;
+    height: 40vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.designservice{
+    height: 95%;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 500vh;
+    
+}
+.serviceCard{
+    height: 30vh;
+    width: 32vh;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    left:100%;
+    
+    
+}
+.serviceCard .part1{
+    width: 100%;
+    height: 88%;
+
+    position: relative;
+    border-radius: 10px;
+
+}
+.part1 .shadow1{
+    position: absolute;
+    height: 75%;
+    width: 75%;
+    background-color: #DDFDE8 ;
+    left: 10%;
+    top: 10%;
+    border-radius: 10px;
+}
+.part1 .shadow2{
+    position: absolute;
+    height: 75%;
+    width: 75%;
+    background-color: #F6D9FB ;
+    left: 6%;
+    top: 14%;
+    border-radius: 10px;
+}
+.part1 .serviceimg{
+    position: absolute;
+    height: 75%;
+    width: 75%;
+   
+    left: 2%;
+    top: 18%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.serviceimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.serviceCard .part2{
+    width: 100%;
+    height: 12%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    
+}
+.part2 h5{
+    padding: 0.5rem;
+} 
+
+footer{
+    margin-top: 2rem;
+    width: 100%;
+    height: 35vh;
+
+}
+.footer1{
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+.footerlogo{
+    height: 5vw;
+    width: 10vw;
+}
+.footerlogo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.footerlinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.footer1 .footerlinks a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.footer1 .footericons i{
+    font-size: 1.5rem;
+}
+.footer2{
+    height: 50%;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+.footer2 h5{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(95, 95, 95);
+}
+.policies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  
+}
+.tags{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 1rem;
+}
